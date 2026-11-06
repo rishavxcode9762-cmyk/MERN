@@ -1,0 +1,158 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="HTML Job Application Form">
+    <title>Job Application Form</title>
+</head>
+
+<body>
+
+    <h1>Job Application Form</h1>
+    <p>Please fill in the details to apply for a job.</p>
+
+    <form>
+
+        <fieldset>
+            <legend>Personal Information</legend>
+
+            <label for="name">Full Name:</label>
+            <input type="text" id="name" name="name"
+                   placeholder="Enter your full name"
+                   required minlength="3">
+            <br><br>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email"
+                   placeholder="example@gmail.com" required>
+            <br><br>
+
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password"
+                   placeholder="Minimum 8 characters"
+                   minlength="8" required>
+            <br><br>
+
+            <label for="phone">Phone Number:</label>
+            <input type="tel" id="phone" name="phone"
+                   placeholder="10 digit number"
+                   pattern="[0-9]{10}" required>
+            <br><br>
+
+            <label for="website">Portfolio URL:</label>
+            <input type="url" id="website" name="website"
+                   placeholder="https://example.com">
+            <br><br>
+
+            <label for="age">Age:</label>
+            <input type="number" id="age" name="age"
+                   min="18" max="60" required>
+            <br><br>
+
+        </fieldset>
+
+        <br>
+
+        <fieldset>
+            <legend>Job Preferences</legend>
+
+            <p>Select Gender:</p>
+
+            <input type="radio" id="male" name="gender" value="Male">
+            <label for="male">Male</label>
+
+            <input type="radio" id="female" name="gender" value="Female">
+            <label for="female">Female</label>
+
+            <input type="radio" id="other" name="gender" value="Other">
+            <label for="other">Other</label>
+
+            <br><br>
+
+            <p>Select Skills:</p>
+
+            <input type="checkbox" id="html" name="skills" value="HTML">
+            <label for="html">HTML</label>
+
+            <input type="checkbox" id="css" name="skills" value="CSS">
+            <label for="css">CSS</label>
+
+            <input type="checkbox" id="java" name="skills" value="Java">
+            <label for="java">Java</label>
+
+            <input type="checkbox" id="javascript" name="skills" value="JavaScript">
+            <label for="javascript">JavaScript</label>
+
+            <br><br>
+
+            <label for="position">Select Job Position:</label>
+            <select id="position" name="position" required>
+                <option value="">--Select Position--</option>
+                <option value="developer">Web Developer</option>
+                <option value="designer">Web Designer</option>
+                <option value="programmer">Programmer</option>
+                <option value="tester">Software Tester</option>
+            </select>
+
+            <br><br>
+
+            <label for="city">Preferred City:</label>
+            <input type="text" id="city" name="city"
+                   list="cities" placeholder="Choose a city">
+
+            <datalist id="cities">
+                <option value="Delhi">
+                <option value="Bareilly">
+                <option value="Noida">
+                <option value="Lucknow">
+                <option value="Mumbai">
+            </datalist>
+
+        </fieldset>
+
+        <br>
+
+        <fieldset>
+            <legend>Additional Information</legend>
+
+            <label for="date">Available Joining Date:</label>
+            <input type="date" id="date" name="date" required>
+            <br><br>
+
+            <label for="time">Preferred Interview Time:</label>
+            <input type="time" id="time" name="time">
+            <br><br>
+
+            <label for="resume">Upload Resume:</label>
+            <input type="file" id="resume" name="resume"
+                   accept=".pdf,.doc,.docx">
+            <br><br>
+
+            <label for="experience">Experience Level (Years):</label>
+            <input type="range" id="experience" name="experience"
+                   min="0" max="20" value="0">
+            <br><br>
+
+            <label for="color">Choose Your Favourite Color:</label>
+            <input type="color" id="color" name="color">
+            <br><br>
+
+            <label for="about">Tell Us About Yourself:</label>
+            <br>
+            <textarea id="about" name="about"
+                      rows="5" cols="40"
+                      placeholder="Write about your skills and experience..."></textarea>
+
+        </fieldset>
+
+        <br>
+
+        <input type="submit" value="Submit Application">
+        <input type="reset" value="Reset Form">
+
+    </form>
+
+</body>
+</html>
