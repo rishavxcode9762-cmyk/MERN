@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Student Performance Report</title>
+
+    <style>
+
+        /* CSS Variables */
+        :root {
+            --primary-color: #173b70;
+            --secondary-color: #dbeafe;
+            --hover-color: #bfdbfe;
+            --border-color: #94a3b8;
+            --text-color: #1e293b;
+            --spacing: 12px;
+            --font-size: 14px;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f1f5f9;
+            color: var(--text-color);
+            padding: 20px;
+        }
+
+        h1 {
+            text-align: center;
+            color: var(--primary-color);
+        }
+
+        .table-container {
+            overflow-x: auto;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            background-color: white;
+            font-size: var(--font-size);
+        }
+
+        caption {
+            font-size: 20px;
+            font-weight: bold;
+            padding: var(--spacing);
+        }
+
+        th, td {
+            border: 1px solid var(--border-color);
+            padding: var(--spacing);
+            text-align: center;
+        }
+
+        thead {
+            background-color: var(--primary-color);
+            color: white;
+        }
+
+        tbody tr:nth-child(even) {
+            background-color: var(--secondary-color);
+        }
+
+        tbody tr:hover {
+            background-color: var(--hover-color);
+        }
+
+        tfoot {
+            background-color: var(--primary-color);
+            color: white;
+            font-weight: bold;
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <h1>Student Performance Report</h1>
+
+    <div class="table-container">
+
+        <table>
+
+            <caption>Class 12 Student Academic Record</caption>
+
+            <thead>
+
+                <tr>
+                    <th rowspan="2" scope="col">Roll No.</th>
+                    <th rowspan="2" scope="col">Student Name</th>
+
+                    <th colspan="4" scope="colgroup">
+                        Academic Details
+                    </th>
+
+                    <th colspan="4" scope="colgroup">
+                        Performance
+                    </th>
+                </tr>
+
+                <tr>
+                    <th scope="col">Subject</th>
+                    <th scope="col">Marks</th>
+                    <th scope="col">Attendance</th>
+                    <th scope="col">Assignment</th>
+                    <th scope="col">Quiz</th>
+                    <th scope="col">Project</th>
+                    <th scope="col">Total</th>
+                    <th scope="col">Grade</th>
+                </tr>
+
+            </thead>
+
+            <tbody>
+
+                <tr><th scope="row">1</th><td>Aarav</td><td>Physics</td><td>88</td><td>95%</td><td>90</td><td>85</td><td>92</td><td>355</td><td>A</td></tr>
+
+                <tr><th scope="row">2</th><td>Riya</td><td>Chemistry</td><td>92</td><td>98%</td><td>95</td><td>90</td><td>94</td><td>371</td><td>A+</td></tr>
+
+                <tr><th scope="row">3</th><td>Rahul</td><td>Mathematics</td><td>78</td><td>90%</td><td>85</td><td>80</td><td>88</td><td>331</td><td>B+</td></tr>
+
+                <tr><th scope="row">4</th><td>Ananya</td><td>English</td><td>85</td><td>96%</td><td>88</td><td>90</td><td>91</td><td>354</td><td>A</td></tr>
+
+                <tr><th scope="row">5</th><td>Vikram</td><td>Physics</td><td>75</td><td>85%</td><td>80</td><td>78</td><td>82</td><td>315</td><td>B</td></tr>
+
+                <tr><th scope="row">6</th><td>Priya</td><td>Chemistry</td><td>95</td><td>99%</td><td>96</td><td>94</td><td>98</td><td>383</td><td>A+</td></tr>
+
+                <tr><th scope="row">7</th><td>Aditya</td><td>Mathematics</td><td>82</td><td>92%</td><td>85</td><td>86</td><td>89</td><td>342</td><td>A</td></tr>
+
+                <tr><th scope="row">8</th><td>Neha</td><td>English</td><td>90</td><td>97%</td><td>92</td><td>91</td><td>95</td><td>368</td><td>A+</td></tr>
+
+                <tr><th scope="row">9</th><td>Arjun</td><td>Physics</td><td>80</td><td>89%</td><td>82</td><td>84</td><td>86</td><td>332</td><td>B+</td></tr>
+
+                <tr><th scope="row">10</th><td>Meera</td><td>Chemistry</td><td>87</td><td>94%</td><td>90</td><td>88</td><td>91</td><td>356</td><td>A</td></tr>
+
+                <tr><th scope="row">11</th><td>Karan</td><td>Mathematics</td><td>72</td><td>86%</td><td>75</td><td>78</td><td>80</td><td>305</td><td>B</td></tr>
+
+                <tr><th scope="row">12</th><td>Simran</td><td>English</td><td>94</td><td>98%</td><td>95</td><td>93</td><td>97</td><td>379</td><td>A+</td></tr>
+
+                <tr><th scope="row">13</th><td>Dev</td><td>Physics</td><td>83</td><td>91%</td><td>86</td><td>85</td><td>88</td><td>342</td><td>A</td></tr>
+
+                <tr><th scope="row">14</th><td>Tanvi</td><td>Chemistry</td><td>89</td><td>95%</td><td>92</td><td>90</td><td>93</td><td>364</td><td>A+</td></tr>
+
+                <tr><th scope="row">15</th><td>Mohit</td><td>Mathematics</td><td>76</td><td>88%</td><td>79</td><td>81</td><td>83</td><td>319</td><td>B</td></tr>
+
+                <tr><th scope="row">16</th><td>Ishita</td><td>English</td><td>91</td><td>97%</td><td>94</td><td>92</td><td>96</td><td>373</td><td>A+</td></tr>
+
+                <tr><th scope="row">17</th><td>Rohan</td><td>Physics</td><td>84</td><td>93%</td><td>87</td><td>86</td><td>89</td><td>346</td><td>A</td></tr>
+
+                <tr><th scope="row">18</th><td>Diya</td><td>Chemistry</td><td>96</td><td>99%</td><td>98</td><td>95</td><td>97</td><td>386</td><td>A+</td></tr>
+
+                <tr><th scope="row">19</th><td>Manav</td><td>Mathematics</td><td>79</td><td>90%</td><td>82</td><td>80</td><td>85</td><td>326</td><td>B+</td></tr>
+
+                <tr><th scope="row">20</th><td>Shreya</td><td>English</td><td>93</td><td>98%</td><td>96</td><td>94</td><td>98</td><td>381</td><td>A+</td></tr>
+
+            </tbody>
+
+            <tfoot>
+
+                <tr>
+                    <td colspan="5">Total Students: 20</td>
+                    <td colspan="5">Academic Report Complete</td>
+                </tr>
+
+            </tfoot>
+
+        </table>
+
+    </div>
+
+</body>
+</html>
