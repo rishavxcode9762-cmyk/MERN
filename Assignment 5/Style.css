@@ -1,0 +1,260 @@
+/* GENERAL SETTINGS */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #f5f5f5;
+    color: #222;
+    font-family: Arial, sans-serif;
+}
+
+/* NAVIGATION */
+header {
+    background-color: #111;
+    color: white;
+    padding: 22px 7%;
+    overflow: hidden;
+}
+
+.logo {
+    float: left;
+    font-size: 28px;
+    letter-spacing: 3px;
+}
+
+nav {
+    float: right;
+    margin-top: 7px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin-left: 25px;
+}
+
+nav a:hover {
+    color: #c49b63;
+}
+
+/* HERO SECTION */
+.hero {
+    height: 550px;
+    background-image: url("https://images.unsplash.com/photo-1523398002811-999ca8dec234?w=1600");
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.65);
+    z-index: 1;
+}
+
+.hero-content {
+    position: absolute;
+    top: 50%;
+    left: 10%;
+    transform: translateY(-50%);
+    color: white;
+    z-index: 2;
+    max-width: 650px;
+}
+
+.tagline {
+    color: #c49b63;
+    letter-spacing: 4px;
+    margin-bottom: 20px;
+}
+
+.hero h1 {
+    font-size: 58px;
+    line-height: 1.1;
+    margin-bottom: 20px;
+}
+
+.hero-content p {
+    margin-bottom: 25px;
+}
+
+.btn {
+    display: inline-block;
+    background-color: #c49b63;
+    color: #111;
+    text-decoration: none;
+    padding: 15px 25px;
+    border: 2px solid #c49b63;
+    font-weight: bold;
+}
+
+.btn:hover {
+    background-color: transparent;
+    color: white;
+}
+
+/* ABOUT SECTION */
+.about {
+    text-align: center;
+    padding: 75px 15%;
+    background-color: white;
+}
+
+.about h2,
+.collections h2,
+.gallery h2,
+.contact h2 {
+    font-size: 32px;
+    margin-bottom: 25px;
+    letter-spacing: 2px;
+}
+
+.about p {
+    line-height: 1.8;
+    font-size: 17px;
+}
+
+/* COLLECTION CARDS */
+.collections {
+    text-align: center;
+    padding: 70px 5%;
+    overflow: hidden;
+}
+
+.card {
+    display: inline-block;
+    width: 28%;
+    min-height: 190px;
+    padding: 35px 20px;
+    margin: 15px;
+    vertical-align: top;
+    text-align: left;
+    box-shadow: 0 5px 18px rgba(0, 0, 0, 0.12);
+}
+
+.card h3 {
+    margin-bottom: 15px;
+}
+
+.card-one {
+    background-color: #171717;
+    color: white;
+    border-radius: 0;
+    border-left: 5px solid #c49b63;
+}
+
+.card-two {
+    background-color: #e8dfd2;
+    border-radius: 25px;
+}
+
+.card-three {
+    background-color: white;
+    border-radius: 8px 35px 8px 35px;
+    border: 1px solid #ddd;
+}
+
+/* GALLERY */
+.gallery {
+    text-align: center;
+    padding: 70px 5%;
+    background-color: white;
+}
+
+.gallery img {
+    width: 28%;
+    height: 280px;
+    object-fit: cover;
+    margin: 12px;
+    border: 5px solid #eee;
+    border-radius: 8px;
+}
+
+/* CONTACT FORM */
+.contact {
+    text-align: center;
+    padding: 70px 20px;
+}
+
+.contact form {
+    max-width: 500px;
+    margin: auto;
+}
+
+.contact input,
+.contact textarea {
+    display: block;
+    width: 100%;
+    padding: 15px;
+    margin: 15px 0;
+    border: 1px solid #bbb;
+    border-radius: 5px;
+    font-size: 15px;
+}
+
+.contact textarea {
+    height: 130px;
+    resize: vertical;
+}
+
+.contact button {
+    background-color: #111;
+    color: white;
+    border: 2px solid #111;
+    padding: 15px 35px;
+    cursor: pointer;
+}
+
+.contact button:hover {
+    background-color: #c49b63;
+    color: #111;
+}
+
+/* FOOTER */
+footer {
+    background-color: #111;
+    color: white;
+    text-align: center;
+    padding: 35px 15px;
+    line-height: 2;
+}
+
+footer a {
+    color: #c49b63;
+    text-decoration: none;
+    margin: 0 8px;
+}
+
+/* RESPONSIVE DESIGN */
+@media (max-width: 700px) {
+    header {
+        text-align: center;
+    }
+
+    .logo,
+    nav {
+        float: none;
+    }
+
+    nav a {
+        display: inline-block;
+        margin: 10px;
+    }
+
+    .hero h1 {
+        font-size: 38px;
+    }
+
+    .card,
+    .gallery img {
+        width: 85%;
+    }
+}
