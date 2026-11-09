@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Navbar Hero</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            font-family: Arial;
+            background: #101827;
+            color: white;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 25px 8%;
+        }
+
+        .logo {
+            font-size: 26px;
+            font-weight: bold;
+        }
+
+        .links {
+            display: flex;
+            gap: 30px;
+        }
+
+        .links a {
+            color: white;
+            text-decoration: none;
+        }
+
+        .hero {
+            height: 85vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            gap: 20px;
+        }
+
+        .hero h1 {
+            font-size: 48px;
+        }
+
+        .hero button {
+            padding: 14px 30px;
+            background: #2563eb;
+            color: white;
+            border: none;
+            border-radius: 6px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    
+<nav class="main-nav">
+    <a href="menu.html">Menu</a>
+    <a href="login.html">Login</a>
+    <a href="products.html">Products</a>
+    <a href="navbar-hero.html">Home</a>
+</nav>
+
+
+<nav>
+    <div class="logo">MYBRAND</div>
+
+    <div class="links">
+        <a href="#">Home</a>
+        <a href="#">About</a>
+        <a href="#">Products</a>
+        <a href="#">Contact</a>
+    </div>
+</nav>
+
+<section class="hero">
+    <h1>Build Your Future</h1>
+    <p>Discover something amazing with us.</p>
+    <button>Get Started</button>
+</section>
+
+</body>
+</html>
